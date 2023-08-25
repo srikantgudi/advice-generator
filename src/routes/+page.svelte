@@ -66,7 +66,7 @@
 
 <main>
   <div class="flex flex-col items-center justify-around md:h-[30vh] h-[80%] rounded-lg m-auto bg-gray-400 md:my-[4rem] mt-[2rem] md:mx-[4rem] mx-[2rem]">
-    <div class="text-lg font-mono">Advice #{data.id}</div>
+    <div class="text-lg font-mono text-teal-200">Advice #{data.id}</div>
     <div class="text-xl text-center">"{data.text}"</div>
     <div class="hidden mb-[1rem]"><img src="/images/pattern-divider-desktop.svg" alt="divider"></div>
     <div class="visible"><img src="/images/pattern-divider-mobile.svg" alt="divider"></div>
