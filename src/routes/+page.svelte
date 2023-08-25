@@ -46,40 +46,32 @@
   }
   .dice {
     position: absolute;
+    z-index: 800;
     margin: auto;
-    bottom: -5%;
-    background-color: white;
-    border-radius: 0.5rem;
-  }
-  .divider-desktop {
-    display: block;
-    position: absolute;
-    bottom: 11%;
-  }
-  .divider-mobile {
-    display: none;
-    position: absolute;
-    bottom: 11%;
+    top: 47%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: cyan;
   }
   @media screen and (max-width:480px) {
     main {
       margin: inherit 1vw;
     }
-    .divider-desktop {
-      display: none;
-    }
-    .divider-mobile {
-      display: block;
+    .dice {
+      top: 52%;
     }
   }
 </style>
 
 <main>
-  <div class="advice my-[4rem]">
-    <div class="text-xl font-mono">Advice #{data.id}</div>
-    <div class="text-2xl text-center">"{data.text}"</div>
-    <div class="mt-5 divider-desktop"><img src="/images/pattern-divider-desktop.svg" alt="divider"></div>
-    <div class="mt-5 divider-mobile"><img src="/images/pattern-divider-mobile.svg" alt="divider"></div>
-    <button on:click={getData} class="dice bg-white-100 text-2xl text-white-200"><img src="/images/icon-dice.svg" width="40" alt="dice"></button>
+  <div class="flex flex-col items-center justify-around md:h-[30vh] h-[80%] rounded-lg m-auto bg-gray-400 md:my-[4rem] mt-[2rem] md:mx-[4rem] mx-[2rem]">
+    <div class="text-lg font-mono">Advice #{data.id}</div>
+    <div class="text-xl text-center">"{data.text}"</div>
+    <div class="hidden mb-[1rem]"><img src="/images/pattern-divider-desktop.svg" alt="divider"></div>
+    <div class="visible"><img src="/images/pattern-divider-mobile.svg" alt="divider"></div>
+    <button on:click={getData} class="dice flex items-center justify-around bg-cyan-100 w-[3rem] h-[3rem] rounded-full">
+      <img src="/images/icon-dice.svg" alt="dice">
+    </button>
   </div>
 </main>
