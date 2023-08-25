@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/srikantgudi/advice-generator](https://github.com/srikantgudi/advice-generator)
-- Live Site URL: [https://advice-generator-ecru-nine.vercel.app](https://advice-generator-ecru-nine.vercel.app)
+- Live Site URL: [https://advice-generator-srikantgudi.vercel.app ](https://advice-generator-srikantgudi.vercel.app )
 
 ## My process
 
